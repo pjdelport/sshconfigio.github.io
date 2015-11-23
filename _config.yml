@@ -35,4 +35,4 @@ version:          1.0.0
 github:
   repo:           https://github.com/sshconfigio/sshconfigio.github.io
 
-gems:             [jekyll-paginate, jekyll-gist, pygments.rb, html-proofer]
+gems:             [jekyll-paginate, jekyll-gist, pygments.rb]
