@@ -7,17 +7,17 @@ title: home
 A curated list of awesome hacks for [SSHConfig](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5?query=ssh_config); for several years I've improved the use of my ssh_config file, and here I share everything I have obtained so far; I use this on Mac OS X, but should be straighforward to adapt this to Linux.
 
 So far, here is what I have obtained:
-- [Separated SSH config files](#separated-ssh-config-files)
-- [A sane _default_ config file](#a-sane-default-config-file)
-- [ControMaster / ControlPath](#contromaster--controlpath)
-- [PKI Authentication](#pki-authentication)
-- [Tunnels](#tunnels)
-- [Jump Hosts](#jump-hosts)
-- [SOCKS Proxy](#socks-proxy)
-- [Remote copy](#remote-copy)
-- [Forward Agent](#forward-agent)
-- [Keep Alive](#keep-alive)
-- [Default user defined by context](#default_user)
+
+*  [Separated SSH config files](#separated-ssh-config-files)
+*  [A sane _default_ config file](#a-sane-default-config-file)
+*  [ControMaster / ControlPath](#contromaster-controlpath)
+*  [PKI Authentication](#pki-authentication)
+*  [Tunnels](#tunnels)
+*  [Jump Hosts](#jump-hosts)
+*  [SOCKS Proxy](#socks-proxy)
+*  [Remote copy](#remote-copy)
+*  [Forward Agent](#forward-agent)
+*  [Keep Alive](#keep-alive)
 
 ## Separated SSH config files
 OpenSSH does not have an option to read several config files, or including everything inside a given directory; it only reads options, either from the command line, from _/etc/ssh/ssh_config_ or _~/.ssh/config_.
@@ -261,5 +261,3 @@ holding your keys to reuse
 
 ## Keep Alive
 ..so your conection is not dropped!
-
-## Default user defined by context
