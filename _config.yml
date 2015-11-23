@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: false
+
+# Setup
+title:            Awesome SSHConfig
+tagline:          'A curated list of awesome SSHConfig hacks'
+description:      'A curated list of awesome <a href="http://awesome.sshconfig.io" target="_blank">SSHConfig</a> hacks, maintained by <a href="https://twitter.com/mgarces" target="_blank">@mgarces</a>.'
+url:              http://marcogarces.github.io
+baseurl:          /
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:    UA-2951053-10
+
+author:
+  name:           'Marco Garcês'
+  url:            https://twitter.com/mgarces
+
+paginate:         5
+paginate_path:    "/news/page:num/"
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/marcogarces/marcogarces.github.io
+
+gems:             [jekyll-paginate, jekyll-gist, pygments.rb]
