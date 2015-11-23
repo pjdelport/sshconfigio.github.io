@@ -11,11 +11,12 @@ So far, here is what I have obtained:
 *  [Separated SSH config files](#separated-ssh-config-files)
 *  [A sane _default_ config file](#a-sane-default-config-file)
 *  [ControMaster / ControlPath](#contromaster-controlpath)
-<!--*  [PKI Authentication](#pki-authentication)-->
-<!--*  [Tunnels](#tunnels)-->
 *  [Jump Hosts](#jump-hosts)
 *  [SOCKS Proxy](#socks-proxy)
 *  [Remote copy](#remote-copy)
+
+<!--*  [PKI Authentication](#pki-authentication)-->
+<!--*  [Tunnels](#tunnels)-->
 <!--*  [Forward Agent](#forward-agent)-->
 <!--*  [Keep Alive](#keep-alive)-->
 
