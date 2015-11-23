@@ -27,6 +27,6 @@ paginate_path:    "/news/page:num/"
 version:          1.0.0
 
 github:
-  repo:           https://github.com/marcogarces/marcogarces.github.io
+  repo:           https://github.com/sshconfigio/sshconfigio.github.io
 
 gems:             [jekyll-paginate, jekyll-gist, pygments.rb]
