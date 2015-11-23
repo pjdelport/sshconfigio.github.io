@@ -11,13 +11,13 @@ So far, here is what I have obtained:
 *  [Separated SSH config files](#separated-ssh-config-files)
 *  [A sane _default_ config file](#a-sane-default-config-file)
 *  [ControMaster / ControlPath](#contromaster-controlpath)
-*  [PKI Authentication](#pki-authentication)
-*  [Tunnels](#tunnels)
+<!--*  [PKI Authentication](#pki-authentication)-->
+<!--*  [Tunnels](#tunnels)-->
 *  [Jump Hosts](#jump-hosts)
 *  [SOCKS Proxy](#socks-proxy)
 *  [Remote copy](#remote-copy)
-*  [Forward Agent](#forward-agent)
-*  [Keep Alive](#keep-alive)
+<!--*  [Forward Agent](#forward-agent)-->
+<!--*  [Keep Alive](#keep-alive)-->
 
 ## Separated SSH config files
 OpenSSH does not have an option to read several config files, or including everything inside a given directory; it only reads options, either from the command line, from _/etc/ssh/ssh_config_ or _~/.ssh/config_.
@@ -132,11 +132,11 @@ I recommend creating a _tmp_ directory inside _~/.ssh/_ and store everything rel
 
 From now on, each time you reconnect to a host, that you are already connected, _ControlMaster_ will share the same connection, no matter how many times you use this (which can be a lot, when you are using [JumpHosts](#jump-hosts)).
 
-## PKI Authentication
-authentication without passwords, using strong public/private keys
+<!--## PKI Authentication
+authentication without passwords, using strong public/private keys-->
 
-## Tunnels
-exposing remote and local ports
+<!--## Tunnels
+exposing remote and local ports-->
 
 ## Jump Hosts
 Imagine this scenario: I use a IPSec VPN connection to my work, and the security guys are not very fond for SSH, but I ended up convincing them to allow me, at least, to connect to one host, which has access to all the other hosts in the network, or, at least some of them; I have disallowed passwords, and I'm using a combination of PKI with One Time Password (using [Google Auth](https://github.com/google/google-authenticator)).
@@ -256,8 +256,8 @@ Now you have the pbcopy listener running, no need to use a _screen_ session.
 ### netcat VS SSH
 You should however be aware of something... by using the netcat method, any user on the same server you are, could connect to port 55555 and inject stuff on your local pasteboard; if you live well with this possibility, use netcat, if not, use my first approach, exploiting SSH _RemoteForward._
 
-## Forward Agent
-holding your keys to reuse
+<!--## Forward Agent
+holding your keys to reuse-->
 
-## Keep Alive
-..so your conection is not dropped!
+<!--## Keep Alive
+..so your conection is not dropped!-->
