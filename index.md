@@ -22,7 +22,7 @@ So far, here is what I have obtained:
 <!--*  [Keep Alive](#keep-alive)-->
 
 ## Separated SSH config files
-OpenSSH does not have an option to read several config files, or including everything inside a given directory; it only reads options, either from the command line, from */etc/ssh/ssh_config* or *~/.ssh/config*.
+[OpenSSH](http://www.openssh.com/) does not have an option to read several config files, or including everything inside a given directory; it only reads options, either from the command line, from */etc/ssh/ssh_config* or *~/.ssh/config*.
 
 This is fine, if you have a couple of hosts on your *SSHConfig* file, but if that grows, and you are like me, and have hundreds of hosts, there is a need to separate config files, to differentiate for example, **Production** from **Development**.
 
