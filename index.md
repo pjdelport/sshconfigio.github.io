@@ -1,6 +1,7 @@
 ---
 layout: default
 title: home
+comments: True
 ---
 
 # [Awesome *SSHConfig*](https://github.com/sshconfigio/awesome_sshconfig)
@@ -262,3 +263,4 @@ holding your keys to reuse-->
 
 <!--## Keep Alive
 ..so your conection is not dropped!-->
+{% include comments.html %}
