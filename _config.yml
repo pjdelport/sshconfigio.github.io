@@ -36,3 +36,4 @@ github:
   repo:           https://github.com/sshconfigio/sshconfigio.github.io
 
 gems:             [jekyll-paginate, jekyll-gist, pygments.rb]
+exclude: [vendor]
