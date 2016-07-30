@@ -18,3 +18,15 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+deploy:
+  provider: s3
+  access_key_id: AKIAJ5YJU5SVTUWUM4EQ
+  secret_access_key:
+    secure: K8jF/JNLbFSmpDC/Xg9kDTUpBbNxW9a7KxfrHYV8jypisIQC3n5hFVI46X+Tl8P6rRk/zyH7duoS4aFU33ElMGNdhT5Uu9ahn3PTgblY4mCVfPocsshutWxcs7pnb05ikVkWxoe2yMrfnce9T5FlrYgvws9ulyMyLbKjmMwrmBT5nUyG8w9y2g6IokD8flvVSqWSo7QjlFKAq2T7YoLckOlazUr/TbFN2GCx19jy8dYxH2XncNnaNDd0IACfL2ObwlGiaPDJpcd/5b1gKD89TrmKyBibz0DhEkv4cGiYnhGphlR56KzHWQJlEjFruHuISqnvTI+CoemMn9qsvo+L/sR/3JLLuFHDClfXHaXyQ5Hp0FrE74A5VVgigWcpA293ANnwUhPAEO/JpTk6IL1CCeTUdYykQSnoueJJOKSD1qNv8c+XE3idcvulqej3dxy6BXZXT/7Fwlzu34u6voc6s5Vy7Aigc6DnfmwR8i8Uq1FvfxOfYQrQSQbtJD6fI/Z5uTKvSYb7xft5Klp+6RKUHy3gEoe/BZyrBosgqaKmOrF0y0dVZ7jq+6xJv5zVK3dZrWMmlLqtXm7PaGs3GDwdrFxWwt1fTeAaPYQspPPRIO4VQwJPd/vP5T2E2xipm8EvBN8UQDerghAEgYiu59FE7dwXNKqE/sqUp/sMoOfivPo=
+  bucket: awesome.sshconfig.io
+  skip_cleanup: true
+  local-dir: "_site/"
+  acl: public_read
+  on:
+    repo: sshconfigio/sshconfigio.github.io
