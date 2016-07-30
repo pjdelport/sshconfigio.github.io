@@ -16,8 +16,9 @@ deploy:
   access_key_id: AKIAJ5YJU5SVTUWUM4EQ
   secret_access_key:
     secure: fJeh6PnbxaC5A6xD6+1xMz3WOCeIl7+ltjYuK2qDppnPmgItf0UQMf9qEOwROfI2Mj3NpwI1ywwIxiN005r0A0NDj7FboTdDBUVbx3h7kccLD2AePm7vU3JcEsUR8c6NQmZAQyRPM0hefsVO2OfAjQlqAXmsrRQ3Dr7jhWTMB+aEuulsFwa/5yYxIdCGc99ETf444WjZqTpL1a//GyVpdh2eLpz/KbPePYL7SwKnYTaWOvnYzAfCt+4uYHMKB9EIpLxhYtXLd4bSeCKjdZXYgZ7E7nKUNf5yyOKl8rLoXAWaroGAbxRTcfLZSpFrhae3+6p09+iLvjpNg+x10ilc9s55JDt4yWNDKW27zIfN9e2IgYGfne9B6fEgEo8CtSWr2GQi4ywYj2/iX8eE+jqgC8qhq1C1cQB5/kXEn/gV64L0HNrRJY0d0iVj2HNWgNc/JjiVJZ5sdbMgSaHfhWj3RxjyNWME8n1/eIBHIBF1a2n/yoV9OkLMXsmZ9sUHZSahnrCcLHnVkhhH2FscT3RE3uB+0fubeNFCX01AxZVCWFi1bSV/oiy+VlfcZjobStXln9WpsGqwOnO8YUVJgwF1hhrJKdYfUD4arMzw929DnLH9/9pKK0nRQdAhG2qlGspnAY7XPhsmxH//qDtfDyNWnM1TLrmzE3enZMHfscpj33M=
-  bucket: awesome.sshconfig.io
+  bucket: "awesome.sshconfig.io"
   skip_cleanup: true
+  region: eu-west-1
   local-dir: "_site/"
   acl: 'public_read'
   on:
