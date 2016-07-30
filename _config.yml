@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 redcarpet:
   # enable auto ids for redcarpet
   extensions:    ["with_toc_data"]
