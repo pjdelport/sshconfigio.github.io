@@ -191,6 +191,7 @@ Using my last scenario, where I need to connect to my work using an IPSec VPN, a
 So, what does OpenSSH offer that can help us with this? __DynamicForward__ for the rescue!
 
 Still on my last scenario, the __JUMPHOST01__ host could reach everything inside my network, and DNS also works from that server, so I just have to tweak the __Host__ entry:
+
 ```
 Host jumphost
   HostName jumphost01.example.com
