@@ -11,7 +11,7 @@ So far, here is what I have obtained:
 
 *  [Separated SSH config files](#separated-ssh-config-files)
 *  [A sane _default_ config file](#a-sane-default-config-file)
-*  [ControMaster / ControlPath](#contromaster-controlpath)
+*  [ControlMaster / ControlPath](#controlmaster-controlpath)
 *  [Jump Hosts](#jump-hosts)
 *  [SOCKS Proxy](#socks-proxy)
 *  [Remote copy](#remote-copy)
@@ -107,7 +107,7 @@ Host remotehost
 
 The default it's just that, something to fall back if you don't specify it.
 
-## ControMaster / ControlPath
+## ControlMaster / ControlPath
 During a normal work day, you might connect to a lot of systems, and use public/private key authentication; this is fine, but most of the times, even though we have tools like _screen_ that allow us to have multiple terminals on the remote server, it's way faster to just open a new connection to the server. Each time you connect to a remote server, you end up creating a new connection and socket, and depending on the size and security of your keys, or if you are using password authentication (shame on you), it get's a little anoying to wait those seconds for the connection, or having to type, over and over again a password. Also, as we explain further down this document, when using Jump Hosts, if you do not have _ControlMaster_ on, you will have to authenticate each time on the _server-in-the-middle_ for your remote server; I can not emphasize how much boring this is. _SSHConfig_ manual pages tell us this:
 
 ```
