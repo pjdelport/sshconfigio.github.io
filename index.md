@@ -11,7 +11,7 @@ So far, here is what I have obtained:
 
 *  [Separated SSH config files](#separated-ssh-config-files)
 *  [A sane _default_ config file](#a-sane-default-config-file)
-*  [ControlMaster / ControlPath](#controlmaster-controlpath)
+*  [ControlMaster / ControlPath](#controlmaster--controlpath)
 *  [Jump Hosts](#jump-hosts)
 *  [SOCKS Proxy](#socks-proxy)
 *  [Remote copy](#remote-copy)
